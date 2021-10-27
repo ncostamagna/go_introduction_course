@@ -1,3 +1,14 @@
+# Indice
+- [Variables](#variables)
+  * [Int](#int)
+  * [Uint](#uint)
+  * [Float](#float)
+  * [String](#string)
+- [Operadores Logicos](#operadores-logicos)
+  * [Or](#or)
+  * [And](#and)
+
+
 # Variables
 
 ## Int

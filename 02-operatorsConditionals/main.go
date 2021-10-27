@@ -22,21 +22,25 @@ func main() {
 	fmt.Println(yearsOld < 40 || yearsOld == 33) // (true or true) = true
 
 	fmt.Println()
+	// AND
+
 	fmt.Println(yearsOld < 32 && yearsOld == 32) // (false and true) = false
 	fmt.Println(yearsOld < 32 && yearsOld == 33) // (false and false) = false
 	fmt.Println(yearsOld < 40 && yearsOld == 32) // (true and true) = true
 
 	fmt.Println()
+	// NOT
 
-	fmt.Println(true)  // true
-	fmt.Println(!true) // false
-
+	fmt.Println(true)             // true
+	fmt.Println(!true)            // false
 	fmt.Println(yearsOld < 40)    // true
 	fmt.Println(!(yearsOld < 40)) // false
 
+	// combinación de operaciones logicas
 	fmt.Println(yearsOld < 25 && yearsOld == 32 || yearsOld < 40)   // (false and true or true ) = true
 	fmt.Println(yearsOld < 25 && (yearsOld == 32 || yearsOld < 40)) // (false and (true or true) ) = false
 
+	// condicional if
 	yearsOld = 20
 
 	if yearsOld > 18 {
@@ -65,6 +69,7 @@ func main() {
 		fmt.Println("three")
 	}
 
+	// condicional switch
 	switch number {
 	case 1:
 		fmt.Println("one")
