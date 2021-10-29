@@ -10,8 +10,22 @@
 
 
 # Variables
-
+Podemos definir una variable indicando el tipo de dato
+```go
+var int myVar 
+myVar = 64
+```
+O podemos utilizar el dos puntos igual (:=) para instanciar y asignar al mismo tiempo, va a tomar el tipo de dato del valor que le pasamos
+```go
+myVar := 64 
+```
 ## Int
+
+```go
+var int64 myVar 
+myVar = 64
+```
+
 |Tipo|Tamaño|Rango|
 |----|------|-----|
 |int8|8 bits|-128 hasta 127|
@@ -22,6 +36,12 @@
 
 
 ## Uint
+
+```go
+var uint64 myVar 
+myVar = 64
+```
+
 |Tipo|Tamaño|Rango|
 |----|------|-----|
 |uint8|8 bits|0 hasta 255|
@@ -33,6 +53,11 @@
 
 ## Float
 
+```go
+var float64 myVar 
+myVar = 64.55
+```
+
 |Tipo|Tamaño|
 |----|------|
 |float32|32 bits|
@@ -40,6 +65,11 @@
 
 ## String
 Los **strings** son cadenas de bytes
+
+```go
+var string myVar 
+myVar = "My string"
+```
 
 # Operadores Logicos
 
@@ -51,6 +81,13 @@ Los **strings** son cadenas de bytes
 |true|false|true|
 |true|true|true|
 
+```go
+myValue1 := 3
+myValue2 := 5
+
+fmt.Println(myValue1 == myValue2 || myValue1 < myValue2) // (false or true) = true
+```
+
 ## And
 |A|B|A and B|
 |----|------|-----|
@@ -58,3 +95,10 @@ Los **strings** son cadenas de bytes
 |false|true|false|
 |true|false|false|
 |true|true|true|
+
+```go
+myValue1 := 3
+myValue2 := 5
+
+fmt.Println(myValue1 == myValue2 && myValue1 < myValue2) // (false and true) = false
+```
