@@ -102,3 +102,30 @@ myValue2 := 5
 
 fmt.Println(myValue1 == myValue2 && myValue1 < myValue2) // (false and true) = false
 ```
+
+# Vetores
+
+## Array
+Tamaño fijo
+
+```go
+	var myArrayVar [6]int
+	fmt.Println(myArrayVar)
+
+	myArrayVar1 := [3]string{"value1", "value2", "value3"}
+	fmt.Println(myArrayVar1)
+
+	myArrayVar[1] = 2
+	myArrayVar[2] = 5
+	myArrayVar[3] = 9
+	fmt.Println(myArrayVar)
+```
+
+## Slice
+Tamaño dinamico
+```go
+var slice1 []int
+
+slice1 = append(slice1, 10, 20, 30, 40, 50)
+fmt.Printf("size: %d, value %v\n", len(slice1), slice1)
+```
