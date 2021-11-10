@@ -7,7 +7,11 @@
 - [Operadores Logicos](#operadores-logicos)
   * [Or](#or)
   * [And](#and)
-
+- [Vetores](#vetores)
+  * [Array](#array)
+  * [Slice](#slice)
+- [Maps](#maps)
+- [For](#for)
 
 # Variables
 Podemos definir una variable indicando el tipo de dato
@@ -128,4 +132,43 @@ var slice1 []int
 
 slice1 = append(slice1, 10, 20, 30, 40, 50)
 fmt.Printf("size: %d, value %v\n", len(slice1), slice1)
+```
+
+# Maps
+
+```go
+// Declaracion e instancia de la variable
+m1 := make(map[int]string)
+
+// Asignamos valores
+m1[1] = "A"
+m1[2] = "B"
+m1[3] = "C"
+
+// Mostramos el valor de la key 1
+fmt.Println(m1[1])
+```
+
+# For
+
+```go
+sum := 0
+for i := 0; i < 10; i++ {
+	sum++
+}
+
+
+arr := []int{1, 2, 3, 1, 2, 3}
+for i, v := range arr {
+	fmt.Println("Index: ",i ," - Value: ", v)
+}
+
+map2 := map[string]float64{
+	"A": 12.3,
+	"Z": 23.1,
+	"C": 34,
+}
+for key, value := range map2 {
+	fmt.Println("Key:", key, "Value:", value)
+}
 ```
