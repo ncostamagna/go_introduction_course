@@ -37,6 +37,10 @@ func main() {
 		var value string
 		fmt.Scanf("%s", &value)
 
+		if value == "0" {
+			break
+		}
+
 		switch value {
 		case "10":
 			array = append(array, notebook)
@@ -50,9 +54,6 @@ func main() {
 			array = append(array, camara)
 		default:
 			array = append(array, notFound)
-		}
-		if value == "0" {
-			break
 		}
 
 	}
