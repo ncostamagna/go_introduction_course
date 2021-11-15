@@ -115,10 +115,11 @@ func main() {
 	var myFloast32Var float32
 	fmt.Printf("Float default value: %f\n", myFloast32Var)
 	fmt.Printf("type: %T, bytes: %d, bits: %d\n", myFloast32Var, unsafe.Sizeof(myFloast32Var), unsafe.Sizeof(myFloast32Var)*8)
+	fmt.Println()
 
 	var myFloat64Var float64
+	fmt.Printf("Float default value: %f\n", myFloat64Var)
 	fmt.Printf("type: %T, bytes: %d, bits: %d\n", myFloat64Var, unsafe.Sizeof(myFloat64Var), unsafe.Sizeof(myFloat64Var)*8)
-
 	fmt.Println()
 
 	// string es una secuencia de bytes
