@@ -172,3 +172,12 @@ for key, value := range map2 {
 	fmt.Println("Key:", key, "Value:", value)
 }
 ```
+
+# Functions
+
+```go
+// x, y are int parameters & return int value
+func MiFunction(x, y int) int {
+	return x + y
+}
+```
