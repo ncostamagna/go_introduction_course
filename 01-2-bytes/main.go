@@ -8,6 +8,7 @@ func main() {
 	var a byte = 'a'
 	var R byte = 82
 	var s byte = 115
+	vector := []byte{65, 97, 82, 115}
 
 	fmt.Println()
 	fmt.Println("Value in ASCII Code:")
@@ -15,6 +16,7 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(R)
 	fmt.Println(s)
+	fmt.Println(vector)
 
 	fmt.Println()
 	fmt.Println("Value in String:")
@@ -22,4 +24,5 @@ func main() {
 	fmt.Println(string(a))
 	fmt.Println(string(R))
 	fmt.Println(string(s))
+	fmt.Println(string(vector))
 }
