@@ -17,7 +17,7 @@ La estructura Matrix debe contener los valores de la matriz, la dimensión del a
 */
 
 func main() {
-	m, err := matrix.New([]float64{2, 7, 8}, []float64{4, 4}, []float64{5, 6, 1})
+	m, err := matrix.New([]float64{2, 7, 8}, []float64{4, 4, 7}, []float64{5, 6, 1})
 
 	if err != nil {
 		fmt.Println(err.Error())
